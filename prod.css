@@ -1,4 +1,4 @@
-:root {
+:root {/*variables*/
     --osc: #A9E190; /*verde oscuro*/
     --clar: #DBF4AD; /*verde claro*/
     --azul: #89A7BE;
@@ -7,14 +7,22 @@
 * {
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: "Charon";
+    src: url("fonts/IosevkaCharon-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Italiana";
+    src: url("fonts/Italiana-Regular.ttf") format("truetype");
+}
 body{
     justify-content: center;
     background-color: var(--clar);
     margin: 0;
 }
-
+/*arriba*/
 header{
+    font-family: 'Italiana';
     justify-content: center;
     gap: 550px;
     display: flex;
@@ -29,8 +37,12 @@ header{
 #hidden{
     color: var(--osc);
 }
+#hidden2{
+    color: var(--clar);
+}
 
 #navbar{
+    font-family: 'Italiana';
     justify-content: center;
     gap: 750px;
     display:flex;
@@ -48,11 +60,105 @@ header{
   text-decoration: none;
 }
 
+h2{
+    font-family: 'Italiana';
+    text-align: center;
+}
+
+/*cuerpo de página*/
 #conteniendo{
     margin: 0 auto;
-    width: 900px;
+    width: 1200px;
 }
-h2{
-    padding: 10px;
-    text-align: center;
+.tit{
+    font-family: 'Italiana'; 
+    font-size: 30px; 
+    /*padding: 10px;*/
+    /*text-align: center;*/
+}
+p{
+    font-size: 25px;
+    font-family: 'Charon';
+}
+/*productos*/
+.prod{
+    padding: 25px;
+    width: 1200px;
+    gap: 25px;
+    height: auto;
+    display: flex;
+    background-color: var(--cafe);
+    border-radius: 150px;
+}
+h3{
+    font-family: 'Italiana';
+    font-size: large;
+}
+.imagen{
+    border-radius: 200px;
+    height: 200px;
+    width:auto;
+}
+
+
+#macete{
+    position: absolute;
+    right: 400px;
+    top: 400px;
+    height: 120px;
+    width: auto;
+    transform: rotate(25deg)
+}
+
+#macete2{
+    position: absolute;
+    top: 780px;
+    left: 360px;
+    height: 120px;
+    width: auto;
+    transform: rotate(-25deg)
+}
+
+#hoja1{
+    position: absolute;
+    top: 863px;
+    right: 480px;
+    height: 250px;
+    width: auto;
+    /*transform: rotate(10deg)*/
+}
+#hoja2{
+    position: absolute;
+    top: 1340px;
+    left: 280px;
+    height: 250px;
+    width: auto;
+    transform: rotate(-165deg)
+}
+
+#donaciones{
+    justify-content: center;
+    padding: 45px;
+    width: 1000px;
+    gap: 25px;
+    height: auto;
+    background-color: var(--azul);
+    border-radius: 50px;
+}
+.dona{
+    width: 500px;
+    gap: 15px;
+    height: auto;
+}
+#fin{
+    display: flex;
+    gap: 50px;
+}
+
+#macete3{
+    /*position: absolute;
+    right: 750px;*/
+    height: 75px;
+    width: auto;
+    /*transform: rotate(25deg)*/
 }
