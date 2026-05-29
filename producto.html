@@ -6,38 +6,43 @@
     <title>Macetella - Productos</title>
     <link rel="stylesheet" href="prod.css">
 </head>
-<header><img src="imagenes/logo.png" alt="logo macetella">Macetella</header>
-<nav><a href="index.html">Sobre Nosotros</a><a href="#h1">Productos</a><a href="index.html">Pedidos</a></nav>
+
+<header><img id="logo" src="imagenes/logo.png" alt="logo macetella"><h1>Macetella</h1><p id="hidden">0</p></header>
+<nav id="navbar"><a href="index.html">Sobre Nosotros</a><a href="#h1">Productos</a><a href="index.html">Pedidos</a></nav>
+
 <body>
-    <h1>Productos</h1>
+    <div id="conteniendo">
+        <h2>Productos</h2>
 
-    <div class="prod">
-        <div class="imagen"><img src="imagenes/macetaBasica.png" alt="maceta estandar"></div>
+        <!--Prouctos -->
+        <div class="prod">
+            <div class="imagen"><img src="imagenes/macetaBasica.png" alt="maceta estandar"></div>
 
-        <div class="texto">
-            <h3> Maceta Estandar</h3>
-            <p>Una maceta básica realizada de una botella plástica. No tiene decoraciones</p>
-            <p><b>☆Gratis</b></p>
+                <div class="texto">
+                <h3> Maceta Estandar</h3>
+                <p>Una maceta básica realizada de una botella plástica. No tiene decoraciones</p>
+                <p><b>☆Gratis</b></p>
+            </div>
         </div>
-    </div>
 
-    <div class="prod">
-        <div class="imagen"><img src="imagenes/macteaPerso.png" alt="maceta personalizada"></div>
+        <div class="prod">
+            <div class="imagen"><img src="imagenes/macteaPerso.png" alt="maceta personalizada"></div>
 
-        <div class="texto">
-            <h3> Maceta Personalizada</h3>
-            <p>Una maceta personalizada a con el diseño a escojer. Incluye: Forma, colores y decoraciones</p>
-            <p><b>☆ ₡ 1.500</b></p>
+            <div class="texto">
+                <h3> Maceta Personalizada</h3>
+                <p>Una maceta personalizada a con el diseño a escojer. Incluye: Forma, colores y decoraciones</p>
+                <p><b>☆ ₡ 1.500</b></p>
+            </div>
         </div>
-    </div>
 
-    <div id="donaciones">
-        <h3>Cada que 1 maceta personalizada es comprada se donan ₡ 1.000  a una de las siguientes organizaciones:</h3>
-        <img src="imagenes/tocu.png" alt="the ocean clean up">
-        <img src="imagenes/bedln.png" alt="bosque eterno de los niños">
-        <p>*Usted escoje a cual quiere donar <img id="macete3" src="imagenes/macetellin.png" alt="macetellin"></p>
+        <!--Disclaimer/Donaciones -->
+        <div id="donaciones">
+            <h3>Cada que 1 maceta personalizada es comprada se donan ₡ 1.000  a una de las siguientes organizaciones:</h3>
+            <img src="imagenes/tocu.png" alt="the ocean clean up">
+            <img src="imagenes/bedln.png" alt="bosque eterno de los niños">
+            <p>*Usted escoje a cual quiere donar <img id="macete3" src="imagenes/macetellin.png" alt="macetellin"></p>
         
+        </div>
     </div>
-
 </body>
 </html>
