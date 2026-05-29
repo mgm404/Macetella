@@ -7,7 +7,14 @@
 * {
     box-sizing: border-box;
 }
-
+@font-face {
+    font-family: "Charon";
+    src: url("fonts/IosevkaCharon-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Italiana";
+    src: url("fonts/Italiana-Regular.ttf") format("truetype");
+}
 body{
     justify-content: center;
     background-color: var(--clar);
@@ -15,6 +22,7 @@ body{
 }
 /*arriba*/
 header{
+    font-family: 'Italiana';
     justify-content: center;
     gap: 550px;
     display: flex;
@@ -34,6 +42,7 @@ header{
 }
 
 #navbar{
+    font-family: 'Italiana';
     justify-content: center;
     gap: 750px;
     display:flex;
@@ -51,16 +60,26 @@ header{
   text-decoration: none;
 }
 
+h2{
+    font-family: 'Italiana';
+    text-align: center;
+}
+
 /*cuerpo de página*/
 #conteniendo{
     margin: 0 auto;
     width: 1200px;
 }
-h2{
-    padding: 10px;
-    text-align: center;
+.tit{
+    font-family: 'Italiana'; 
+    font-size: 30px; 
+    /*padding: 10px;*/
+    /*text-align: center;*/
 }
-
+p{
+    font-size: 25px;
+    font-family: 'Charon';
+}
 /*productos*/
 .prod{
     padding: 25px;
@@ -70,6 +89,10 @@ h2{
     display: flex;
     background-color: var(--cafe);
     border-radius: 150px;
+}
+h3{
+    font-family: 'Italiana';
+    font-size: large;
 }
 .imagen{
     border-radius: 200px;
@@ -82,23 +105,23 @@ h2{
     position: absolute;
     right: 400px;
     top: 400px;
-    height: 90px;
+    height: 120px;
     width: auto;
     transform: rotate(25deg)
 }
 
 #macete2{
     position: absolute;
-    top: 670px;
-    left: 380px;
-    height: 90px;
+    top: 780px;
+    left: 360px;
+    height: 120px;
     width: auto;
     transform: rotate(-25deg)
 }
 
 #hoja1{
     position: absolute;
-    top: 720px;
+    top: 863px;
     right: 480px;
     height: 250px;
     width: auto;
@@ -106,7 +129,7 @@ h2{
 }
 #hoja2{
     position: absolute;
-    top: 1140px;
+    top: 1340px;
     left: 280px;
     height: 250px;
     width: auto;
